@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/jawher/mow.cli/internal/flow"
+	"github.com/4commerce/mow.cli/internal/flow"
 )
 
 func TestTheCpCase(t *testing.T) {

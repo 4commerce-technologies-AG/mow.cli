@@ -10,8 +10,8 @@ import (
 
 	"testing"
 
-	"github.com/jawher/mow.cli/internal/container"
-	"github.com/jawher/mow.cli/internal/flow"
+	"github.com/4commerce/mow.cli/internal/container"
+	"github.com/4commerce/mow.cli/internal/flow"
 )
 
 func okCmd(t *testing.T, spec string, init CmdInitializer, args []string) {
@@ -1158,7 +1158,7 @@ func TestSpecOptInlineValue(t *testing.T) {
 	require.Equal(t, []string{"b"}, *y)
 }
 
-// https://github.com/jawher/mow.cli/issues/28
+// https://github.com/4commerce/mow.cli/issues/28
 func TestWardDoesntRunTooSlowly(t *testing.T) {
 	init := func(cmd *Cmd) {
 		_ = cmd.StringOpt("login", "", "Login for credential, e.g. username or email.")
@@ -1252,7 +1252,7 @@ func TestEnvOverrideOk(t *testing.T) {
 }
 
 // Anti-regression test for infinite loop case with envvar backed opts
-// https://github.com/jawher/mow.cli/pull/49
+// https://github.com/4commerce/mow.cli/pull/49
 func TestEnvOptSeq(t *testing.T) {
 	defer os.Unsetenv("envopt")
 
