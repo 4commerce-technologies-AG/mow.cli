@@ -432,7 +432,7 @@ func formatValueForHelp(hide bool, v flag.Value) string {
 		}
 	}
 
-	return fmt.Sprintf("(default %s)", v.String())
+	return fmt.Sprintf("(current=%s)", v.String())
 }
 
 func formatEnvVarsForHelp(envVars string) string {
